@@ -1,0 +1,45 @@
+@import url(c:\Users\Pablo Lopez\Desktop\Web_Projects\Event-Landing-Page\reset.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+#section-opening {
+  background: url("images/citybk.jpg");
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 95%;
+}
+
+#section-opening .image-overlay {
+  background: rgba(32, 4, 65, 0.8);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+#section-opening .image-overlay .top {
+  background: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  height: 20%;
+  width: 100%;
+  z-index: 2;
+}
+/*# sourceMappingURL=style.css.map */

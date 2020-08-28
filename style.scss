@@ -6,10 +6,42 @@
     margin: 0;
 }
 
-$purple-color: rgb(96,62,255);
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+$black-color: rgba(0, 0, 0, 0.75);
+$purple-color: rgba(32, 4, 65, 0.8);
 $blue-color: rgb(0,124,164);
 $light-blue-color: rgb(64,170,204);
 $gray-color: rgb(107,99,99);
 $light-gray-color: rgb(157,152,152);
 $dark-white-color: rgb(245,245,245);
 
+#section-opening{
+    background: url("images/citybk.jpg");    
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 95%;
+    .image-overlay{
+        background: $purple-color;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        .top{
+            background: $black-color;
+            overflow: hidden;
+            height: 20%;
+            width: 100%;
+            z-index: 2;
+        }
+    }
+}
