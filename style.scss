@@ -15,8 +15,8 @@ html, body{
 
 $black-color: rgba(0, 0, 0, 0.75);
 $purple-color: rgba(32, 4, 65, 0.8);
-$blue-color: rgb(0,124,164);
-$light-blue-color: rgb(64,170,204);
+$blue-color: rgb(2, 98, 129);
+$light-blue-color: rgb(8, 105, 185);
 $gray-color: rgb(107,99,99);
 $light-gray-color: rgb(157,152,152);
 $dark-white-color: rgb(245,245,245);
@@ -30,18 +30,74 @@ $dark-white-color: rgb(245,245,245);
     position: relative;
     width: 100%;
     height: 95%;
+
     .image-overlay{
         background: $purple-color;
         overflow: hidden;
         height: 100%;
         width: 100%;
         z-index: 2;
+
         .top{
             background: $black-color;
             overflow: hidden;
             height: 20%;
             width: 100%;
             z-index: 2;
+            //need flex to have button on right side of top
+            display: flex;
+            justify-content: space-between;
+
+            .logo{
+                //image source cannot be centered vertically
+                //so I used 1% padding on top
+                padding-top: 1%;
+                //flex so .logo container can wrap width around img
+                display: flex;
+                height: 100%;
+                margin-left: 5%;
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
+            .button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+                border-radius: 50px;
+                width: 17%;
+                height: 40%;
+                margin-right: 10%;
+                background: $blue-color;
+                &:hover{
+                    background: darkgoldenrod;
+                    transition: 0.2s ease-in-out;
+                    cursor: pointer;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                }
+            }
         }
     }
 }
+
+/*
+Designed to appear on monitors or mobile phones.
+*/
+@media screen and (max-width: 600px) {
+    #section-opening .image-overlay .top {
+      height: 15%;
+    }
+    #section-opening .image-overlay .top .button{
+        width: 100%;
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+  }
