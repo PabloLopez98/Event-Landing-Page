@@ -17,7 +17,7 @@ html, body {
 }
 
 #section-opening {
-  background: url("images/citybk.jpg");
+  background: url("images/citybk2.jpg");
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ html, body {
 }
 
 #section-opening .image-overlay .top {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   height: 20%;
   width: 100%;
@@ -91,22 +91,442 @@ html, body {
 
 #section-opening .image-overlay .top .button a {
   color: white;
+  font-family: sans-serif;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-/*
-Designed to appear on monitors or mobile phones.
-*/
-@media screen and (max-width: 600px) {
-  #section-opening .image-overlay .top {
-    height: 15%;
-  }
-  #section-opening .image-overlay .top .button {
-    width: 100%;
-    margin-right: 5%;
-    margin-left: 5%;
-  }
+#section-opening .image-overlay .bottom {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#section-opening .image-overlay .bottom h1, #section-opening .image-overlay .bottom h3, #section-opening .image-overlay .bottom h4, #section-opening .image-overlay .bottom h5, #section-opening .image-overlay .bottom i {
+  color: white;
+}
+
+#section-opening .image-overlay .bottom h1 {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#section-opening .image-overlay .bottom h3 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 5%;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+#section-opening .image-overlay .bottom h4 {
+  font-size: 2rem;
+  margin-bottom: 1.5%;
+  font-family: sans-serif;
+}
+
+#section-opening .image-overlay .bottom h5 {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 3%;
+  font-weight: lighter;
+}
+
+#section-opening .image-overlay .bottom .fas:hover {
+  color: darkgoldenrod;
+}
+
+#section-time {
+  width: 100%;
+  height: 50%;
+  background: #026281;
+  color: white;
+}
+
+#section-time .sentence-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30%;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+#section-time .time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 5%;
+}
+
+#section-time .time-container .top {
+  text-align: center;
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+#section-time .time-container .bottom {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+#section-steps {
+  width: 100%;
+  height: 50%;
+  background: white;
+}
+
+#section-steps .sentence-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30%;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: #444343;
+}
+
+#section-steps .steps-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+#section-steps .steps-container .top {
+  color: #444343;
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  margin-bottom: 10%;
+}
+
+#section-steps .steps-container .num {
+  margin-left: 4%;
+  margin-right: 2%;
+  height: 50%;
+}
+
+#section-steps .steps-container .num h1 {
+  font-size: 7rem;
+  color: #0f90fa;
+}
+
+#section-steps .steps-container .bottom {
+  width: 100%;
+  color: #444343;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#section-steps .steps-container .bottom h5 {
+  text-align: start;
+}
+
+#section-presenters {
+  width: 100%;
+  height: 80%;
+  background: lightgray;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#section-presenters .sentence-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30%;
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: black;
+}
+
+#section-presenters .sentence-holder span {
+  font-weight: bold;
+}
+
+#section-presenters .items-container {
+  background: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 60%;
+}
+
+#section-presenters .items-container .item {
+  text-align: center;
+  background: white;
+}
+
+#section-presenters .items-container .item div {
+  padding-top: 3%;
+  height: 50%;
+  width: 100%;
+  margin-bottom: 25%;
+}
+
+#section-presenters .items-container .item div img {
+  border-radius: 50%;
+  width: 90%;
+  height: auto;
+}
+
+#section-presenters .items-container .item .name {
+  color: black;
+  font-family: sans-serif;
+  margin-bottom: 10%;
+}
+
+#section-presenters .items-container .item .role {
+  color: #444343;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#section-quote {
+  background: url("images/quotebk.jpg");
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+
+#section-quote .image-overlay {
+  background: rgba(32, 4, 65, 0.8);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+#section-quote .image-overlay .quote-container {
+  padding-top: 5%;
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+#section-quote .image-overlay .quote-container h1 {
+  text-align: center;
+}
+
+#section-quote .image-overlay .quote-container h3 {
+  margin-top: 2%;
+  text-align: center;
+}
+
+#section-schedule {
+  width: 100%;
+  height: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: .7fr 2fr 2fr;
+      grid-template-rows: .7fr 2fr 2fr;
+}
+
+#section-schedule .h1-container {
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#section-schedule .h1-container h1 {
+  display: inline;
+  width: 20%;
+  font-size: 2.5rem;
+  border-style: solid;
+  border-color: #026281;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+#section-schedule h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#section-schedule .a {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#section-schedule .b {
+  color: #444343;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#section-ending {
+  background: url("images/citybk2.jpg");
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+}
+
+#section-ending .image-overlay {
+  background: rgba(32, 4, 65, 0.8);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#section-ending .image-overlay div {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+
+#section-ending .image-overlay .button {
+  justify-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 50px;
+  width: 80%;
+  height: 80%;
+  background: #026281;
+}
+
+#section-ending .image-overlay .button:hover {
+  background: darkgoldenrod;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#section-ending .image-overlay .button a {
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#section-copyright {
+  background: #026281;
+  height: 10%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+#section-copyright h3 {
+  text-align: center;
+  color: white;
+  margin: auto;
+  word-spacing: 4px;
 }
 /*# sourceMappingURL=style.css.map */
